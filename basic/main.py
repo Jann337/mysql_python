@@ -1,5 +1,5 @@
 from mysql.connector import connect, Error
-from crud import create_database_query, create_tables_query, add_todo_list_query, create_item_to_list, select_all_tasks_query, delete_task_query
+from basic.crud import create_database_query, create_tables_query, add_todo_list_query, create_item_to_list, select_all_tasks_query, delete_task_query
 
 
 def setup_db():
