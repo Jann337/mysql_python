@@ -26,14 +26,17 @@ def select_tasks():
 def select_task(id):
     return session.query(TodoItems).where(TodoItems.item_id == id).first()
 
+# CREATE A SELECT TASK FOR TODO LISTS and LIST
+
 # UPDATE
 
 
 def make_complete(id):
     task = select_task(id)
     task.state = True
-    task.name = "asdasdasd"
     session.commit()
+
+#  CREATE UPDATE FUNC TO MAKE AS NOT COMPLETE
 
 # DELETE
 
@@ -42,3 +45,5 @@ def delete_task(id):
     task = select_task(id)
     session.delete(task)
     session.commit()
+
+# CRATE A DELETE TASK FOR TODO LIST

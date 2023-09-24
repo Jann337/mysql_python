@@ -18,3 +18,5 @@ if __name__ == "__main__":
         print("not completed")
 
     crud.delete_task(one_task.item_id)
+
+# MAKE IT AN ACTUAL TOD APP
